@@ -1,0 +1,53 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.color-primary {
+    color: #17A2B8;
+}
+.color-1 {
+    color: #083E46;
+}
+.color-2 {
+    color: #0B545F;
+}
+.color-3 {
+    color: #0F6A79;
+}
+.color-4 {
+    color: #128092;
+}
+.color-5 {
+    color: #1596AB;
+}
+.color-6 {
+    color: #18ADC4;
+}
+.smaller {
+    font-size: 70%;
+}
+.pie {
+    /* Basic layout */
+    display: inline-block;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+
+    /* A little styling */
+    border: .15em solid #fff;
+    box-shadow: 0 .075em .2em .05em rgba(0,0,0,.25);
+
+    /* fixes a minor clipping issue in Chrome */
+    background-origin: border-box;
+    background-image: conic-gradient(
+        #083E46 108deg,      /* 30%                  30 * 3.6                  (end of segment 1) */
+        #0B545F 108deg,      /* 30%                                          (start of segment 2) */
+        #0B545F 198deg,      /* 55%           (25 + 30) * 3.6                  (end of segment 2) */
+        #0F6A79 198deg,      /* 55%                                          (start of segment 3) */
+        #0F6A79 263deg,      /* 73%           (18 + 55) * 3.6                  (end of segment 3) */
+        #128092 263deg,      /* 73%                                          (start of segment 4) */
+        #128092 313deg,      /* 87%           (14 + 73) * 3.6                  (end of segment 4) */
+        #1596AB 313deg,      /* 87%                                          (start of segment 5) */
+        #1596AB 342deg,      /* 95%            (8 + 87) * 3.6                  (end of segment 5) */
+        #18ADC4 0            /* 100%     last stop is always 360 degrees     (start of segment 6) */
+    );
+}
